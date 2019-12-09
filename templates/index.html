@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+    <script src="static/js/jquery.min.js"></script>
+    <script src="static/js/index.js"></script>
+    <title>短网址服务</title>
+</head>
+<body>
+    <div class="header">
+        <p class="header-font-style"></p>
+    </div>
+    <div class="logo">
+
+    </div>
+    <div class="content">
+        <div class="function">
+            <div class="ul-style">
+                <ul class="content-font font">
+                    <li id="li1" class="content_li" onclick="input_change('请输入长网址','li1')">缩短网址</li>
+                    <li id="li2" class="content_li" onclick="input_change('请输短网址','li2')">还原网址</li>
+                    <li id="li3" class="content_li" onclick="input_change('请输入要加密的内容','li3')">md5生成</li>
+                </ul> 
+            </div>
+            <div class="style-one"></div>
+            <input class="ant-input" id="ant-input" type="text" placeholder="请输入长网址">
+            <button class="button-style" type="button" onclick="function_selection()"><span id="span1">缩短网址</span></button>
+            <div class="prompt content-font">
+                <p id="p1"></p>
+                <p id="p2"></p>
+            </div>
+        </div>
+    </div>
+    <div class="bottom"></div>
+</body>
+</html>
